@@ -9,7 +9,6 @@ const constoller = new UserController;
 const router = Router();
 const viewPath = join(__dirname, 'views', 'user')
 const loginPath = join(__dirname, 'views', 'login')
-const dashboardPath = join(__dirname, 'views', 'dashboard')
 
 /**
  * rutas de usuario
@@ -41,13 +40,6 @@ router.get('/logout', (req: Request, res: Response) => {
     res.render(loginPath)
 })
 
-router.get('/dashboard', (req: Request, res: Response) => {
-    if(req.session.dni && req.session.nombre)
-        res.render(dashboardPath, {dni: req.session.dni, nombre: req.session.nombre})
-    else {
-        res.send("no estas autorizado")
-    }
-})
 
 router.post('/login', (req: Request, res: Response) => {
     const { dni, nombre } = req.body
@@ -66,7 +58,7 @@ router.post('/login', (req: Request, res: Response) => {
             else {
                 req.session.dni = dni;
                 req.session.nombre = nombre;
-                res.redirect('/dashboard')
+                res.redirect('/votacion')
                 return
             }
         } );

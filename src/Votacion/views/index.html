@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Votación</title>
+</head>
+<body>
+    <nav id="up">
+        <p>Votación</p>
+    </nav>
+  <div class="contenido">
+    <div class="candidatos">
+        <div id="candidato1">
+            <img src="usuario.png" alt="candidato1" width="300px" height="300px">
+            <p id="nombre1">Nombre Candidato 1</p>
+            <div class="contenedor_btn">
+                <button type="button" id="1" onclick="opcion1();">Votar</button>
+            </div>
+        </div>
+        <div id="candidato2">
+            <img src="usuario.png" alt="candidato2" width="300px" height="300px">
+            <p id="nombre2">Nombre Candidato 2</p>
+            <button type="button" id="2" onclick="opcion2();">Votar</button>
+        </div>
+        <div id="candidato3">
+            <img src="usuario.png" alt="candidato3" width="300px" height="300px">
+            <p id="nombre3">Nombre Candidato 3</p>
+            <button type="button" id="3" onclick="opcion3();"">Votar</button>
+        </div>
+    </div>
+    <div id="btn_confirmacion">
+        <button type="button" onclick="realizarVoto();">Confirmar voto</button>
+    </div>
+  </div>
+  <div id="miModal" class="modal">
+    <div class="modal-content">
+      <span class="cerrar" onclick="cerrar();">&times;</span>
+      <p id="mensaje" style="font-size: 20px; text-align: center;"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

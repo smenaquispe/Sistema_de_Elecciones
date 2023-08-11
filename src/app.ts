@@ -5,6 +5,7 @@ import AuthRouter from './Autenticacion_y_seguridad/Autenticacion.routes'
 import sequelize from './connection'
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
+import VotacionRouter from './Votacion/Votacion.routes'
 
 
 const port: number = 3000
@@ -40,6 +41,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // routes
 app.use(AuthRouter)
+app.use(VotacionRouter)
 
 app.get('/', (req: Request, res: Response) => {
     res.send('main')
