@@ -58,7 +58,7 @@ Prácticas de codificación limpia aplicadas: Descripción y Fragmento de Códig
 
 ![Imagen de WhatsApp 2023-08-10 a las 22 58 39](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/c7bb82f4-91ae-449b-91ff-24272645d07d)
 
--Se encontraron code smells no criticos, paquetes y variables sin usar.<br>
+-Se encontraron code smells cuya severidad maxima es Minor , paquetes y variables sin usar.<br>
 ![Imagen de WhatsApp 2023-08-10 a las 22 59 46](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/93f9de4e-bd7c-463c-a118-1a21dabe183a) 
 ![Imagen de WhatsApp 2023-08-10 a las 23 00 13](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/93efde8c-e4e3-4191-9a3a-e89c84b904a0)
 
@@ -66,12 +66,17 @@ Prácticas de codificación limpia aplicadas: Descripción y Fragmento de Códig
 
 Estilos de Programación aplicados: Descripción y Fragmento de Código (evidencia) <br>
 ### Principios SOLID aplicados: Descripción y Fragmento de Código (evidencia) <br>
-#### Principio O: <br>
+### Principio O: <br>
 #### Principio de Abierto/Cerrado (Open/Closed Principle):
 El principio abierto/cerrado postula que las entidades de software, como clases, módulos y funciones, deben estar abiertas para su extensión pero cerradas para su modificación. Esto significa que deberías poder agregar nuevas funcionalidades sin modificar el código existente.<br>
 ![Imagen de WhatsApp 2023-08-11 a las 00 49 24](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/fcd0a9f1-8d6c-48a9-9564-f417fcb34123)
+![Imagen de WhatsApp 2023-08-11 a las 00 49 05](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/f06e81b9-d444-4491-86a9-2b825c52d4ec)
 
+### Principio I: <br>
+#### Principio de Segregación de Interfaces (Interface Segregation Principle):
 
+![Imagen de WhatsApp 2023-08-11 a las 00 53 54](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/54b16043-3983-4945-b36f-d0b4f133c15b)
+![Imagen de WhatsApp 2023-08-11 a las 00 54 57](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/584bb225-4447-4628-9724-8fd41e4cf29e)
 
 
 Conceptos DDD aplicados: Descripción y Fragmento de Código (evidencia) <br>
