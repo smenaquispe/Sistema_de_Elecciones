@@ -54,6 +54,15 @@ El objetivo del proyecto es desarrollar una plataforma de votación en línea qu
 
 
 Prácticas de codificación limpia aplicadas: Descripción y Fragmento de Código (evidencia). <br>
+
+![Imagen de WhatsApp 2023-08-10 a las 22 58 39](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/c7bb82f4-91ae-449b-91ff-24272645d07d)
+
+-Se encontraron code smells no criticos, paquetes y variables sin usar.<br>
+![Imagen de WhatsApp 2023-08-10 a las 22 59 46](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/93f9de4e-bd7c-463c-a118-1a21dabe183a) 
+![Imagen de WhatsApp 2023-08-10 a las 23 00 13](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/93efde8c-e4e3-4191-9a3a-e89c84b904a0)
+
+
+
 Estilos de Programación aplicados: Descripción y Fragmento de Código (evidencia) <br>
 Principios SOLID aplicados: Descripción y Fragmento de Código (evidencia) <br>
 Conceptos DDD aplicados: Descripción y Fragmento de Código (evidencia) <br>
