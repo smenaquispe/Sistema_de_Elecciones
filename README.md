@@ -39,12 +39,14 @@ El objetivo del proyecto es desarrollar una plataforma de votación en línea qu
 - Domain-driven Design (DDD): Aplicar conceptos de DDD para modelar las entidades del sistema y las reglas de negocio involucradas en el proceso electoral.
 
 
-###Funcionalidades: Diagrama de Casos de Uso y Prototipo (o GUI). <br>
+### Funcionalidades: Diagrama de Casos de Uso y Prototipo (o GUI). <br>
 -Vista de Usuario: Diagrama de Casos de Uso UML <br>
 ![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/2f381db8-3ced-4081-8578-a00fb0b36a8b)
 
 
-Modelo de Dominio: Diagrama de Clases y Módulos. <br>
+### Modelo de Dominio: Diagrama de Clases y Módulos. <br>
+![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/7926aca7-c9df-4b85-9446-156e34b00308)
+
 Arquitectura y Patrones: Diagrama de Componentes o Paquetes. <br>
 Prácticas de codificación limpia aplicadas: Descripción y Fragmento de Código (evidencia). <br>
 Estilos de Programación aplicados: Descripción y Fragmento de Código (evidencia) <br>
