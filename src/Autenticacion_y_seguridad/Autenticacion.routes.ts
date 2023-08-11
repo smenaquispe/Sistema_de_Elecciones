@@ -1,6 +1,7 @@
 import { Router, Request, Response } from "express";
 import { join } from "path";
 import { UserController } from "./controllers/User.controller";
+import session from "express-session";
 
 
 const constoller = new UserController;
@@ -34,8 +35,18 @@ router.get('/login', (req: Request, res: Response) => {
     res.render(loginPath)
 })
 
+router.get('/logout', (req: Request, res: Response) => {
+    req.session.dni = null
+    req.session.nombre = null
+    res.render(loginPath)
+})
+
 router.get('/dashboard', (req: Request, res: Response) => {
-    res.render(dashboardPath)
+    if(req.session.dni && req.session.nombre)
+        res.render(dashboardPath, {dni: req.session.dni, nombre: req.session.nombre})
+    else {
+        res.send("no estas autorizado")
+    }
 })
 
 router.post('/login', (req: Request, res: Response) => {
@@ -44,8 +55,7 @@ router.post('/login', (req: Request, res: Response) => {
         .login(dni, nombre)
         .then(data => {
             if(data instanceof Error) {
-                res.render(loginPath, {mensaje: data})
-                return
+                res.render(loginPath, {mensaje: data});
             }
 
             else if(data.status == 'DENIED') {
@@ -54,6 +64,8 @@ router.post('/login', (req: Request, res: Response) => {
             } 
 
             else {
+                req.session.dni = dni;
+                req.session.nombre = nombre;
                 res.redirect('/dashboard')
                 return
             }

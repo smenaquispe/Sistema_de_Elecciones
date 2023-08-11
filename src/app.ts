@@ -3,6 +3,9 @@ import { create } from 'express-handlebars'
 import { join } from 'path'
 import AuthRouter from './Autenticacion_y_seguridad/Autenticacion.routes'
 import sequelize from './connection'
+import session from 'express-session';
+import cookieParser from 'cookie-parser';
+
 
 const port: number = 3000
 const app: Application = express()
@@ -11,6 +14,23 @@ const hbs = create({
     extname: '.hbs',
     layoutsDir: join(__dirname, 'views', 'layouts')
 })
+
+declare module 'express-session' {
+  interface Session {
+    dni: number | null;
+    nombre: string | null;
+  }
+}
+
+// Configurar Express Session
+app.use(cookieParser());
+app.use(
+  session({
+    secret: 'secreto',
+    resave: false,
+    saveUninitialized: true,
+  })
+);
 
 app.engine('.hbs', hbs.engine )
 app.set('view engine', '.hbs')
