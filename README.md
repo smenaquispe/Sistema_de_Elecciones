@@ -47,7 +47,12 @@ El objetivo del proyecto es desarrollar una plataforma de votación en línea qu
 ### Modelo de Dominio: Diagrama de Clases y Módulos. <br>
 ![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/7926aca7-c9df-4b85-9446-156e34b00308)
 
-Arquitectura y Patrones: Diagrama de Componentes o Paquetes. <br>
+### Arquitectura y Patrones: Diagrama de Componentes o Paquetes. <br>
+
+![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/115afbbd-89f0-414d-8907-f669402b4afb)
+![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/81613b18-5861-45e5-9cae-e543014605c2)
+
+
 Prácticas de codificación limpia aplicadas: Descripción y Fragmento de Código (evidencia). <br>
 Estilos de Programación aplicados: Descripción y Fragmento de Código (evidencia) <br>
 Principios SOLID aplicados: Descripción y Fragmento de Código (evidencia) <br>
