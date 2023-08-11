@@ -4,8 +4,6 @@ export interface VoteRepository {
     selectAll(): Promise<VoteModel[]>
     select(dni: string): Promise<VoteModel | null>
     count(partido: string): Promise<number>
-    add(vote: VoteModel): Promise<void>
+    add(dniVotante: number, partidoPolitico: string): Promise<void>
     delete(dni: string): Promise<void>
 }
-
-// aqui solo FRIMA SQL

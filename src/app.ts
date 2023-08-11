@@ -6,6 +6,7 @@ import sequelize from './connection'
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
 import VotacionRouter from './Votacion/Votacion.routes'
+import VoteRouter from './Voto/Vote.routes'
 
 
 const port: number = 3000
@@ -42,6 +43,7 @@ app.use(express.static(join(__dirname, 'public')))
 // routes
 app.use(AuthRouter)
 app.use(VotacionRouter)
+app.use(VoteRouter)
 
 app.get('/', (req: Request, res: Response) => {
     res.send('main')

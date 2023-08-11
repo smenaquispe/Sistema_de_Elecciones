@@ -1,45 +1,16 @@
 <h1>Votacion</h1>
-<h1>Bienvenido</h1>
 Dni: {{{dni}}}
 <br>
 Nombre: {{{nombre}}}
 <a href="/logout">logout</a>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/style.css">
-<title>Votación</title>
-</head>
-<body>
-    <nav id="up">
-        <p>Votación</p>
-    </nav>
-  <div class="contenido">
-    <div class="candidatos">
-        {{#each candidatos}}
-          <div id="candidato{{id}}">
-              <img src="usuario.png" alt="{{nombre}}" width="300px" height="300px">
-              <p id="nombre{{id}}">{{nombre}}</p>
-              <p>{{partidoPolitico}}</p>
-              <div class="contenedor_btn">
-                  <button type="button" id="{{id}}" onclick="opcion{{id}}();">Votar</button>
-              </div>
-          </div>
-        {{/each}}
-    </div>
-    <div id="btn_confirmacion">
-        <button type="button" onclick="realizarVoto();">Confirmar voto</button>
-    </div>
-  </div>
-  <div id="miModal" class="modal">
-    <div class="modal-content">
-      <span class="cerrar" onclick="cerrar();">&times;</span>
-      <p id="mensaje" style="font-size: 20px; text-align: center;"></p>
-    </div>
-  </div>
-  <script src="/script.js"></script>
-</body>
-</html>
+{{mensaje}}
+<form action="/votacion" method="post">
+  {{#each candidatos}}
+      <div>
+          <input type="radio" name="partido" id="candidato{{id}}" value="{{partidoPolitico}}">
+          <label for="candidato{{id}}">Cadidato: {{nombre}} Partido: {{partidoPolitico}}</label>
+      </div>
+  {{/each}}
+  <button>Confirmar Votacion</button>
+</form>

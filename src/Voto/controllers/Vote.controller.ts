@@ -14,18 +14,14 @@ export class VoteController {
 
     // aqui implementamos ruta
     getAll() {
-        return this.service.getAllUsers()
-    }
-
-    getByDni(dni: string) {
-        return this.service.getUserByDni(dni)
+        return this.service.getAllVotes()
     }
 
     getNumVotesByP(partido: string) {
         return this.service.getVotesByCandidate(partido)
     }
 
-    setVote(vote: VoteModel) {
-        return this.service.setVoto(vote)
+    setVote(dniVotante: number, partidoPolitico: string) {
+        return this.service.setVoto(dniVotante, partidoPolitico)
     }
 }

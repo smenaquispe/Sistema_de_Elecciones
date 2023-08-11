@@ -2,6 +2,7 @@ import { Sequelize } from 'sequelize-typescript';
 import { UserEntity } from './Autenticacion_y_seguridad/models/User.entity';
 import { VotanteEntity } from './Votacion/model/Votante.entity';
 import { CandidatoEntity } from './Votacion/model/Candidato.entity';
+import { VoteEntity } from './Voto/model/Vote.entity';
 
 // seuqlize
 const sequelize = new Sequelize({
@@ -12,6 +13,6 @@ const sequelize = new Sequelize({
     dialect: 'mysql'
 })
 
-sequelize.addModels([UserEntity, VotanteEntity, CandidatoEntity]);
+sequelize.addModels([UserEntity, VotanteEntity, CandidatoEntity, VoteEntity]);
 
 export default sequelize

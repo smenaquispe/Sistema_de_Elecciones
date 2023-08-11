@@ -9,24 +9,12 @@ export class VoteService {
         this.vote = vote;
     }
 
-    async getAllUsers() {
+    async getAllVotes() {
         try {
             const votes = await this.vote.selectAll();
             return votes;
         } catch (error) {
             return Error(`Error al obtener usuarios. ${error}`);
-        }
-    }
-
-    async getUserByDni(dni: string) {
-        try {
-            const vote = await this.vote.select(dni)
-            if (!vote) {
-                return Error(`El usuario con dni ${dni} no existe`)
-            }
-            return vote
-        } catch (error) {
-            return Error(`Error al obtener el usuario con dni ${dni} ${error}`);
         }
     }
 
@@ -43,9 +31,9 @@ export class VoteService {
         }
     }
 
-    async setVoto(vote: VoteModel) {
+    async setVoto(dniVotante: number, partidoPolitico: string) {
         try {
-            await this.vote.add(vote)
+            await this.vote.add(dniVotante, partidoPolitico)
         } catch (error) {
             return Error(`Error al ingresar el voto : ${error}`);
         }

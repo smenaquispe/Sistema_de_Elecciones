@@ -1,5 +1,7 @@
 import { Votante } from "../model/Votante";
 
+type statusExist = 'DONT EXIST' | 'EXIST' | Error
+
 export class VotanteService {
     
     private votante: Votante;
@@ -17,19 +19,21 @@ export class VotanteService {
           }
     }
 
-    async getUserByDni(dni: string) {
+    async getUserByDni(dni: number) : Promise<statusExist> {
         try {
-            const votante = await this.votante.select(parseInt(dni))
+            const votante = await this.votante.select(dni)
             if(!votante) {
-                return Error(`El votante con dni ${dni} no existe`)
+                return 'DONT EXIST'
+            } else {
+                console.log(votante.dni)
+                return 'EXIST'
             }
-            return votante
         } catch(error) {
             return Error(`Error al obtener el votante con dni ${dni} ${error}`);
         }
     }
 
-    async addVotante(dni: string) {
-        this.votante.add(parseInt(dni))
+    async addVotante(dni: number) {
+        this.votante.add(dni)
     }
 }

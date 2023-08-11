@@ -16,11 +16,11 @@ export class VotanteController {
         return this.service.getAllVotantes()
     }
 
-    getByDni(dni: string) {
+    getByDni(dni: number) {
         return this.service.getUserByDni(dni)
     }
 
-    addVotante(dni: string) {
+    addVotante(dni: number) {
         return this.service.addVotante(dni);
     }
 }

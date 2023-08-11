@@ -6,5 +6,3 @@ export interface UserRepository {
     add(user: UserModel): Promise<void>
     delete(dni: string): Promise<void>
 }
-
-// aqui solo FRIMA SQL

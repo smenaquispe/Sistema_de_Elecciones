@@ -21,9 +21,9 @@ export class Vote implements VoteRepository {
         });
     }
 
-    async add(vote: VoteModel): Promise<void> {
+    async add(dniVotante: number, partidoPolitico: string): Promise<void> {
         try {
-            await VoteEntity.create(vote);
+            await VoteEntity.create({dniVotante, partidoPolitico});
         } catch (error) {
             console.error('Error al agregar el voto:', error);
             throw error;
