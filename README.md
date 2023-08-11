@@ -65,7 +65,15 @@ Prácticas de codificación limpia aplicadas: Descripción y Fragmento de Códig
 
 
 Estilos de Programación aplicados: Descripción y Fragmento de Código (evidencia) <br>
-Principios SOLID aplicados: Descripción y Fragmento de Código (evidencia) <br>
+### Principios SOLID aplicados: Descripción y Fragmento de Código (evidencia) <br>
+#### Principio O: <br>
+#### Principio de Abierto/Cerrado (Open/Closed Principle):
+El principio abierto/cerrado postula que las entidades de software, como clases, módulos y funciones, deben estar abiertas para su extensión pero cerradas para su modificación. Esto significa que deberías poder agregar nuevas funcionalidades sin modificar el código existente.<br>
+![Imagen de WhatsApp 2023-08-11 a las 00 49 24](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/fcd0a9f1-8d6c-48a9-9564-f417fcb34123)
+
+
+
+
 Conceptos DDD aplicados: Descripción y Fragmento de Código (evidencia) <br>
 ![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/7926aca7-c9df-4b85-9446-156e34b00308)
 
