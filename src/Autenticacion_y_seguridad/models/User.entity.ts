@@ -1,22 +1,20 @@
 import { UserModel } from "./User.model";
 import { Table, Column, Model, PrimaryKey } from "sequelize-typescript";
 
-@Table({tableName: 'usuarios'})
+@Table({tableName: 'usuario'})
 export class UserEntity extends Model implements UserModel {
     
     @PrimaryKey
-    @Column({autoIncrement: true})
-    id: number;
+    @Column
+    dni: number;
 
     @Column
-    username: string;
+    nombre: string;
 
     @Column
     email: string;
 
     @Column
-    createdAt?: Date;
+    rol: string
 
-    @Column
-    updatedAt?: Date;
 }

@@ -1,5 +1,5 @@
-import { User } from "../model/User";
-import { UserService } from "../service/User.service";
+import { User } from "../models/User";
+import { UserService } from "../services/User.service";
 
 export class UserController {
 
@@ -18,5 +18,10 @@ export class UserController {
 
     getByDni(dni: string) {
         return this.service.getUserByDni(dni)
+    }
+
+    // login
+    login(dni: string, nombre: string) {
+        return this.service.authenticate(dni, nombre);
     }
 }

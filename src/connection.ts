@@ -1,5 +1,5 @@
 import { Sequelize } from 'sequelize-typescript';
-import { UserEntity } from './Autenticacion_y_seguridad/model/User.entity';
+import { UserEntity } from './Autenticacion_y_seguridad/models/User.entity';
 
 // seuqlize
 const sequelize = new Sequelize({

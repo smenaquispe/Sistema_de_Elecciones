@@ -1,7 +1,7 @@
 import express, { Application, Request, Response } from 'express'
 import { create } from 'express-handlebars'
 import { join } from 'path'
-import UserRouter from './Autenticacion_y_seguridad/User.routes'
+import AuthRouter from './Autenticacion_y_seguridad/Autenticacion.routes'
 import sequelize from './connection'
 
 const port: number = 3000
@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 
 
 // routes
-app.use('/user', UserRouter)
+app.use(AuthRouter)
 
 app.get('/', (req: Request, res: Response) => {
     res.send('main')
