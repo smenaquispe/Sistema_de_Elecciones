@@ -40,6 +40,9 @@ El objetivo del proyecto es desarrollar una plataforma de votación en línea qu
 
 
 Funcionalidades: Diagrama de Casos de Uso y Prototipo (o GUI). <br>
+![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/2f381db8-3ced-4081-8578-a00fb0b36a8b)
+
+
 Modelo de Dominio: Diagrama de Clases y Módulos. <br>
 Arquitectura y Patrones: Diagrama de Componentes o Paquetes. <br>
 Prácticas de codificación limpia aplicadas: Descripción y Fragmento de Código (evidencia). <br>
