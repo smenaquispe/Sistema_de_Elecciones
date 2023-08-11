@@ -40,7 +40,7 @@ El objetivo del proyecto es desarrollar una plataforma de votación en línea qu
 
 
 #Funcionalidades: Diagrama de Casos de Uso y Prototipo (o GUI). <br>
--Vista de Usuario: Diagrama de Casos de Uso UML
+-Vista de Usuario: Diagrama de Casos de Uso UML <br>
 ![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/2f381db8-3ced-4081-8578-a00fb0b36a8b)
 
 
