@@ -29,7 +29,6 @@ El objetivo del proyecto es desarrollar una plataforma de votación en línea qu
 ### Uso de patrones/Estilos de arquitectura:
 
 - Implementar una arquitectura escalable y modular que permita agregar nuevas funcionalidades en el futuro.
-- Aplicar patrones de diseño para separar las responsabilidades y mejorar la mantenibilidad.
 
 ### Uso de prácticas de desarrollo de software:
 
