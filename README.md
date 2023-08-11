@@ -65,10 +65,6 @@ Prácticas de codificación limpia aplicadas: Descripción y Fragmento de Códig
 
 Estilos de Programación aplicados: Descripción y Fragmento de Código (evidencia) <br>
 ### Principios SOLID aplicados: Descripción y Fragmento de Código (evidencia) <br>
-### Principio S: <br>
--Una clase debe tener una sola responsabilidad o funcionalidad
-![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/d6c9ea48-a610-46a8-a7ef-a6895697ca06)
-
 
 ### Principio O: <br>
 #### Principio de Abierto/Cerrado (Open/Closed Principle):
