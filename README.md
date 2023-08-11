@@ -45,7 +45,8 @@ El objetivo del proyecto es desarrollar una plataforma de votación en línea qu
 
 
 ### Modelo de Dominio: Diagrama de Clases y Módulos. <br>
-![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/7926aca7-c9df-4b85-9446-156e34b00308)
+![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/84b6fb74-cf7f-422d-946a-f6660c30d76a)
+
 
 ### Arquitectura y Patrones: Diagrama de Componentes o Paquetes. <br>
 
@@ -66,8 +67,10 @@ Prácticas de codificación limpia aplicadas: Descripción y Fragmento de Códig
 Estilos de Programación aplicados: Descripción y Fragmento de Código (evidencia) <br>
 Principios SOLID aplicados: Descripción y Fragmento de Código (evidencia) <br>
 Conceptos DDD aplicados: Descripción y Fragmento de Código (evidencia) <br>
-     Entidades, Objetos de Valor, [Servicios de Dominio,].
-     Agregados y Módulos.
-     Fábricas
-     Repositorios
-     “Arquitectura en Capas”
+![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/7926aca7-c9df-4b85-9446-156e34b00308)
+
+Entidades, Objetos de Valor, [Servicios de Dominio,].
+Agregados y Módulos.
+Fábricas
+Repositorios
+“Arquitectura en Capas”
