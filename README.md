@@ -95,8 +95,7 @@ Conceptos DDD aplicados: Descripción y Fragmento de Código (evidencia) <br>
    ![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/11b5f720-ccf2-416e-bfbf-c634f9d17345)
    ![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/65c6ae28-ef36-4d96-a6eb-a346ba8ce7c8)
 
-## Fábricas:
+
 ## Repositorios
 ![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/68100ea8-bdea-4cc1-913a-324231b9f3a3)
 
-“Arquitectura en Capas”
