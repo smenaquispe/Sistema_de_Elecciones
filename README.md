@@ -66,6 +66,11 @@ Prácticas de codificación limpia aplicadas: Descripción y Fragmento de Códig
 
 Estilos de Programación aplicados: Descripción y Fragmento de Código (evidencia) <br>
 ### Principios SOLID aplicados: Descripción y Fragmento de Código (evidencia) <br>
+### Principio S: <br>
+-Una clase debe tener una sola responsabilidad o funcionalidad
+![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/d6c9ea48-a610-46a8-a7ef-a6895697ca06)
+
+
 ### Principio O: <br>
 #### Principio de Abierto/Cerrado (Open/Closed Principle):
 El principio abierto/cerrado postula que las entidades de software, como clases, módulos y funciones, deben estar abiertas para su extensión pero cerradas para su modificación. Esto significa que deberías poder agregar nuevas funcionalidades sin modificar el código existente.<br>
@@ -77,13 +82,21 @@ El principio abierto/cerrado postula que las entidades de software, como clases,
 
 ![Imagen de WhatsApp 2023-08-11 a las 00 53 54](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/54b16043-3983-4945-b36f-d0b4f133c15b)
 ![Imagen de WhatsApp 2023-08-11 a las 00 54 57](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/584bb225-4447-4628-9724-8fd41e4cf29e)
+![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/8bcb0ab4-7ea9-4102-a9d7-b480d71c4301)
+-En esta ultima imagen se muestra una interfaz sencilla para el usuario. <br>
 
 
 Conceptos DDD aplicados: Descripción y Fragmento de Código (evidencia) <br>
 ![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/7926aca7-c9df-4b85-9446-156e34b00308)
 
-Entidades, Objetos de Valor, [Servicios de Dominio,].
-Agregados y Módulos.
-Fábricas
-Repositorios
+## Entidades, Objetos de Valor, [Servicios de Dominio,].<br>
+###Agregados y Módulos. <br>
+-Modulo ejemplo: <br>
+   ![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/11b5f720-ccf2-416e-bfbf-c634f9d17345)
+   ![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/65c6ae28-ef36-4d96-a6eb-a346ba8ce7c8)
+
+## Fábricas:
+## Repositorios
+![image](https://github.com/smenaquispe/Sistema_de_Elecciones/assets/104391441/68100ea8-bdea-4cc1-913a-324231b9f3a3)
+
 “Arquitectura en Capas”
