@@ -17,7 +17,14 @@ router.get('/candidato', (req: Request, res: Response) => {
 })
 
 router.get('/votacion', (req: Request, res: Response) => {
-    res.render(votacionPath)
+    candidatoController
+    .getAll()
+    .then(resp => {
+        if(!(resp instanceof Error)) {
+            res.render(votacionPath, {candidatos: resp})
+        }
+    })
+    .catch(err => res.render(votacionPath, {mensaje: 'No se pudo recuperar datos'}))
 })
 
 export default router

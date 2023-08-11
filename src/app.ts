@@ -38,7 +38,7 @@ app.set('view engine', '.hbs')
 
 app.use(express.urlencoded({ extended: false }));
 
-
+app.use(express.static(join(__dirname, 'public')))
 // routes
 app.use(AuthRouter)
 app.use(VotacionRouter)

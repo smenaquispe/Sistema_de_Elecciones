@@ -33,7 +33,7 @@ export class UserService {
     async authenticate(dni: string, nombre: string) : Promise<statusAuth | Error> {
         try {
             const user = await this.user.select(dni)
-            console.log(user)
+
             if(!user) {
                 return {
                     message: 'Usuario no existente',

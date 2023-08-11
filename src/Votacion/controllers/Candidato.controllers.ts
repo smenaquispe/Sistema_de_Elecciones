@@ -11,7 +11,6 @@ export class CandidatoController {
         this.service = new CandidatoService(this.candidato_)
     }
 
- // aqui implementamos ruta
     getAll() {
         return this.service.getAllCandidatos()
     }

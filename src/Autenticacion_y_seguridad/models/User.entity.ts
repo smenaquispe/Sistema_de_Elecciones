@@ -1,5 +1,6 @@
+import { CandidatoEntity } from "../../Votacion/model/Candidato.entity";
 import { UserModel } from "./User.model";
-import { Table, Column, Model, PrimaryKey } from "sequelize-typescript";
+import { Table, Column, Model, PrimaryKey, HasOne } from "sequelize-typescript";
 
 @Table({tableName: 'usuario'})
 export class UserEntity extends Model implements UserModel {
@@ -17,4 +18,6 @@ export class UserEntity extends Model implements UserModel {
     @Column
     rol: string
 
+    @HasOne(() => CandidatoEntity)
+    candidato: CandidatoEntity
 }

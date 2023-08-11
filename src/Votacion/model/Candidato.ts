@@ -6,7 +6,9 @@ import { UserEntity } from "../../Autenticacion_y_seguridad/models/User.entity";
 export class Candidato implements CandidatoRepository {
     
     async selectAll(): Promise<CandidatoEntity[]> {
-        return await CandidatoEntity.findAll({include: UserEntity});
+        return await CandidatoEntity.findAll({
+            include: [UserEntity]
+        });
     }
 
     async select(dni: string): Promise<CandidatoEntity| null> {

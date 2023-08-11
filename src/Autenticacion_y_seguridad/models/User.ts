@@ -1,5 +1,6 @@
 import { UserRepository } from "./User.repository";
 import { UserEntity } from "./User.entity";
+import { CandidatoEntity } from "../../Votacion/model/Candidato.entity";
 
 // aqui con SQL (SET GET)
 export class User implements UserRepository {

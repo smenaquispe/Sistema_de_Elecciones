@@ -12,9 +12,6 @@ const sequelize = new Sequelize({
     dialect: 'mysql'
 })
 
-UserEntity.hasOne(CandidatoEntity)
-CandidatoEntity.belongsTo(UserEntity)
-
 sequelize.addModels([UserEntity, VotanteEntity, CandidatoEntity]);
 
 export default sequelize

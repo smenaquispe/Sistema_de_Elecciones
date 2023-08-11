@@ -11,7 +11,10 @@ export class CandidatoService {
     async getAllCandidatos() {
         try {
             const candidatos = await this.candidato_.selectAll();
-            return candidatos;
+            const parseCandidatos = candidatos.map((candidato, index) => {
+                return { partidoPolitico: candidato.partidoPolitico , nombre: candidato.user.nombre, id: index + 1 }
+            })
+            return parseCandidatos;
           } catch (error) {
             return Error(`Error al obtener usuarios. ${error}`);
           }
